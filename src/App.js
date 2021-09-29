@@ -39,7 +39,8 @@ const movieStyle = {
   border: "1px solid #D1D5DB",
   width: "70%",
   margin: "1rem 0rem",
-  borderRadius: "0.5rem"
+  borderRadius: "0.5rem",
+  background: "#fcf5f0"
 };
 
 const headerTextStyle = {
@@ -87,14 +88,23 @@ export default function App() {
         <p style={{ padding: "0.5rem", fontSize: "large", fontWeight: "bold" }}>
           Connect with me:
         </p>
-        <a style={{ padding: "10px", width: "30px", height: "30px" }} href="/">
-          <img src="images/github.svg" alt="github" />
+        <a
+          style={{ padding: "10px", width: "30px", height: "30px" }}
+          href="https://github.com/ankit9015"
+        >
+          github
         </a>
-        <a style={{ padding: "10px", width: "30px", height: "30px" }} href="/">
-          <img src="./images/twitter.svg" alt="twitter" />
+        <a
+          style={{ padding: "10px", width: "30px", height: "30px" }}
+          href="https://www.linkedin.com/in/ankit-joshi-1411451ab/"
+        >
+          linkedin
         </a>
-        <a style={{ padding: "10px", width: "30px", height: "30px" }} href="/">
-          <img src="./images/instagram.svg" alt="instagram" />
+        <a
+          style={{ padding: "10px", width: "30px", height: "30px" }}
+          href="https://twitter.com/Ankitjoshi98"
+        >
+          twitter
         </a>
       </footer>
     </div>
