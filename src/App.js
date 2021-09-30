@@ -3,24 +3,83 @@ import "./styles.css";
 
 var moviesDB = {
   scifi: [
-    { name: "Interstellar", rating: "4.2/5" },
-    { name: "Arrival", rating: "4/5" },
-    { name: "Lucy", rating: "4.2/5" }
+    {
+      name: "Interstellar",
+      description:
+        "Interstellar is a 2014 epic science fiction drama film co-written, directed and produced by Christopher Nolan",
+      rating: "4.2/5"
+    },
+    {
+      name: "Arrival",
+      description:
+        "Arrival is based on — the award-winning novella Story of Your Life by Ted Chiang — was published in 1998, almost two decades ago, which indicates its central themes were brewing long before this year",
+      rating: "4/5"
+    },
+    {
+      name: "Lucy",
+      description:
+        "Lucy is a 2014 French science fiction action film[5] written and directed by Luc Besson for his company EuropaCorp, and produced by his wife, Virginie Besson-Silla. ",
+      rating: "4.2/5"
+    }
   ],
   comic: [
-    { name: "Hera Pheri", rating: "4.2/5" },
-    { name: "Golmaal Fun Unlimited", rating: "4/5" },
-    { name: "Andaz apna apna", rating: "4/5" }
+    {
+      name: "Hera Pheri",
+      description:
+        "Hera Phari is one of those evergreen movie that always remain classic.",
+      rating: "4.2/5"
+    },
+    {
+      name: "Golmaal Fun Unlimited",
+      description:
+        "Golmaal Fun Unlimited is the 1st movie of the Golmaal Series and it is one of the most hilarious bolywood movie.",
+      rating: "4/5"
+    },
+    {
+      name: "Andaz apna apna",
+      description:
+        "Andaaz apna apna is old yet gold movie, it has many unique character and gags that are still used in memes.",
+      rating: "4/5"
+    }
   ],
   psychology: [
-    { name: "Fight Club", rating: "4.4/5" },
-    { name: "Vikram Vedha", rating: "4.3/5" },
-    { name: "Shutter Island", rating: "4.2/5" }
+    {
+      name: "Fight Club",
+      description:
+        "One of the greatest movie ever created in the history of cinema. It's a psychological thriller",
+      rating: "4.4/5"
+    },
+    {
+      name: "Vikram Vedha",
+      description:
+        "If you are lover of mind bending genre where you are constantly questioning what next, then this movie is a treat for you.",
+      rating: "4.3/5"
+    },
+    {
+      name: "Shutter Island",
+      description:
+        "Shutter Island is one on the best psychological thriller that keeps surprising you.",
+      rating: "4.2/5"
+    }
   ],
   horror: [
-    { name: "Ring", rating: "4.2/5" },
-    { name: "Conjuring", rating: "4/5" },
-    { name: "Shutter", rating: "4.2/5" }
+    {
+      name: "Ring",
+      description:
+        "I always found The Ring extremely creepy. The neverending gray sky drizzle helped keep it that way. ",
+      rating: "4.2/5"
+    },
+    {
+      name: "Conjuring",
+      description: "This movie is one of the most famous horror movie.",
+      rating: "4/5"
+    },
+    {
+      name: "Shutter",
+      description:
+        "One of the most creepiest horror movie ever, the story line in very creative.",
+      rating: "4.2/5"
+    }
   ]
 };
 
@@ -79,7 +138,14 @@ export default function App() {
             <li key={movie.name} style={movieStyle}>
               {" "}
               <div style={{ fontSize: "larger" }}> {movie.name} </div>
-              <div style={{ fontSize: "smaller" }}> {movie.rating} </div>
+              <div style={{ fontSize: "smaller", margin: "1rem" }}>
+                {" "}
+                {movie.description}{" "}
+              </div>
+              <div style={{ fontSize: "smaller", margin: "0 2rem" }}>
+                {" "}
+                {movie.rating}{" "}
+              </div>
             </li>
           ))}
         </ul>
