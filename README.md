@@ -2,6 +2,7 @@
 
 The movie recommendation app, is a basic web app that suggests some of my favourite movies under different genres.
 The program is built using React-JS, HTML and CSS.
+I created this project over CodeSandBox, It's a great online IDE that you must check out.
 
 This is my second react project, the site is basic but took me a while to built.
 
